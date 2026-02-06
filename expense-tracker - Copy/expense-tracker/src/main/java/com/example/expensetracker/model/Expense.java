@@ -1,33 +1,26 @@
 package com.example.expensetracker.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "expenses")
 public class Expense {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String title;
-    private double amount;
-    private String category;
-    private LocalDate date;
-    private String type; // "INCOME" or "EXPENSE"
+    @NotBlank private String title;
+    @PositiveOrZero private double amount;
+    @NotBlank private String category;
+    @NotNull private LocalDate date;
+    @NotBlank private String type; // INCOME or EXPENSE
 
     public Expense() {}
-
     public Expense(String title, double amount, String category, LocalDate date, String type) {
-        this.title = title;
-        this.amount = amount;
-        this.category = category;
-        this.date = date;
-        this.type = type;
+        this.title = title; this.amount = amount; this.category = category; this.date = date; this.type = type;
     }
 
-    // Getters and Setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     public String getTitle() { return title; }
