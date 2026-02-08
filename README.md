@@ -7,58 +7,58 @@ The project allows users to manage expenses and view analytical insights such as
 
 🚀 Features
 
-Add, update, delete expenses
+*Add, update, delete expenses
 
-View all expenses
+*View all expenses
 
-Category-wise expense analytics
+*Category-wise expense analytics
 
-Monthly expense analytics
+*Monthly expense analytics
 
-RESTful API design
+*RESTful API design
 
-MySQL database integration
+*MySQL database integration
 
 🛠 Tech Stack
 
-Java 17
+*Java 17
 
-Spring Boot
+*Spring Boot
 
-Spring Data JPA
+*Spring Data JPA
 
-MySQL
+*MySQL
 
-Maven
+*Maven
 
-Postman (API testing)
+*Postman (API testing)
 
 📌 API Endpoints
 Expense APIs
-POST   /api/expenses
-GET    /api/expenses
-PUT    /api/expenses/{id}
-DELETE /api/expenses/{id}
+*POST   /api/expenses
+*GET    /api/expenses
+*PUT    /api/expenses/{id}
+*DELETE /api/expenses/{id}
 
 Analytics APIs
-GET /api/analytics/category
-GET /api/analytics/monthly
+*GET /api/analytics/category
+*GET /api/analytics/monthly
 
 🧪 Testing
 
-APIs tested using Postman
+*APIs tested using Postman
 
-Sample JSON requests provided for easy testing
+*Sample JSON requests provided for easy testing
 
 🎯 Future Enhancements
 
-User authentication & authorization
+*User authentication & authorization
 
-Expense filtering by date range
+*Expense filtering by date range
 
-Export expenses as CSV
+*Export expenses as CSV
 
-Frontend integration (React / Angular)
+*Frontend integration (React / Angular)
 
 👨‍💻 Author
 
