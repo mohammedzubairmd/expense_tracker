@@ -1,65 +1,53 @@
-# expense_tracker
+# 💰 FinanceFlow Pro: Full-Stack Personal Finance Suite
 
-📊 Expense Tracker – Spring Boot Backend
+FinanceFlow Pro is a professional-grade personal finance application designed to help users track spending, visualize financial trends, and hit savings goals. It features a robust **Spring Boot** backend and a sleek, responsive **Tailwind CSS** frontend.
 
-A backend Expense Tracker application developed using Spring Boot, MySQL, and RESTful APIs.
-The project allows users to manage expenses and view analytical insights such as category-wise and monthly expense summaries.
+## 🚀 Key Features
 
-🚀 Features
+* **Smart Dashboard:** Real-time visualization of Net Worth, Total Income, and Expenses.
+* **AI-Powered Insights:** Automatically calculates daily "Burn Rate" and projects end-of-month balances.
+* **Interactive Analytics:** Dynamic Line Charts for growth trends and Doughnut Charts for category breakdowns using **Chart.js**.
+* **Budget Tracking:** Set monthly limits per category with visual progress bars.
+* **Financial Calendar:** A specialized daily view to track spending habits day-by-day.
+* **Mobile Optimized:** Fully responsive design with a mobile-first navigation bar and Dark Mode support.
 
-*Add, update, delete expenses
+## 🛠️ Tech Stack
 
-*View all expenses
+**Backend:**
+* Java 17 / Spring Boot
+* Spring Data JPA (Hibernate)
+* MySQL / PostgreSQL
+* Maven
 
-*Category-wise expense analytics
+**Frontend:**
+* JavaScript (ES6+)
+* Tailwind CSS (UI Framework)
+* Chart.js (Data Visualization)
+* FontAwesome (Iconography)
 
-*Monthly expense analytics
+## 📸 Screenshots
 
-*RESTful API design
+| Desktop View Dashboard | Mobile App Experience |
+| :--- | :--- |
+| <img src="https://github.com/user-attachments/assets/e0c39437-befc-48dd-9234-25a8d81679c9" width="600" /> | <img width="370" height="600" alt="Screenshot 2026-02-08 190138" src="https://github.com/user-attachments/assets/661050ce-da60-4e58-a15c-020d6404e28d" />
+|
 
-*MySQL database integration
+---
 
-🛠 Tech Stack
+## 📌 API Endpoints
 
-*Java 17
+### Expense APIs
+* `POST   /api/expenses` - Create new record
+* `GET    /api/expenses` - Fetch all history
+* `PUT    /api/expenses/{id}` - Update record
+* `DELETE /api/expenses/{id}` - Remove record
 
-*Spring Boot
+### Analytics APIs
+* `GET /api/analytics/category` - Category-wise breakdown
+* `GET /api/analytics/monthly` - Monthly trend data
 
-*Spring Data JPA
+## 🏗️ Installation & Setup
 
-*MySQL
-
-*Maven
-
-*Postman (API testing)
-
-📌 API Endpoints
-Expense APIs
-*POST   /api/expenses
-*GET    /api/expenses
-*PUT    /api/expenses/{id}
-*DELETE /api/expenses/{id}
-
-Analytics APIs
-*GET /api/analytics/category
-*GET /api/analytics/monthly
-
-🧪 Testing
-
-*APIs tested using Postman
-
-*Sample JSON requests provided for easy testing
-
-🎯 Future Enhancements
-
-*User authentication & authorization
-
-*Expense filtering by date range
-
-*Export expenses as CSV
-
-*Frontend integration (React / Angular)
-
-👨‍💻 Author
-
-Mohammed Zubair
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/mohammedzubairmd/expense_tracker.git
