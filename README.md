@@ -51,3 +51,13 @@ FinanceFlow Pro is a professional-grade personal finance application designed to
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/mohammedzubairmd/expense_tracker.git
+
+   
+## 🗄️ Database Configuration
+
+FinanceFlow Pro uses **MySQL** for data persistence. To set up the database locally, follow these steps:
+
+### 1. Create the Database
+Open your MySQL terminal or Workbench and run:
+```sql
+CREATE DATABASE YOUR_DATABASE_NAME
