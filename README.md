@@ -76,10 +76,14 @@ Navigate to src/main/resources/application.properties and update the following f
 Properties
 # Database Connection
 spring.datasource.url=jdbc:mysql://localhost:3306/finance_db?useSSL=false&serverTimezone=UTC
+
 spring.datasource.username=your_mysql_username
+
 spring.datasource.password=your_mysql_password
 
 # JPA / Hibernate Settings
 spring.jpa.hibernate.ddl-auto=update
+
 spring.jpa.show-sql=true
+
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
