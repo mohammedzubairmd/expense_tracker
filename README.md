@@ -60,4 +60,26 @@ FinanceFlow Pro uses **MySQL** for data persistence. To set up the database loca
 ### 1. Create the Database
 Open your MySQL terminal or Workbench and run:
 ```sql
-CREATE DATABASE YOUR_DATABASE_NAME
+create database user;
+use user;
+create table user(id int primary key,
+name varchar(20),
+age int);
+insert into user values (1,'Raj',18) ,
+(2,'Rio',20);
+
+```
+
+2. Configure application.properties
+Navigate to src/main/resources/application.properties and update the following fields with your local credentials:
+
+Properties
+# Database Connection
+spring.datasource.url=jdbc:mysql://localhost:3306/finance_db?useSSL=false&serverTimezone=UTC
+spring.datasource.username=your_mysql_username
+spring.datasource.password=your_mysql_password
+
+# JPA / Hibernate Settings
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
